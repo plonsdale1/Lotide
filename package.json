@@ -1,0 +1,20 @@
+{
+  "name": "@plonsdale1/lotide2",
+  "version": "1.0.0",
+  "description": "\"dev dependencies\"",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Peter",
+  "license": "ISC"
+}

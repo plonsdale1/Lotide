@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ ASSERTION PASSED! ${actual} === ${expected} ✅✅✅`);
-  } else if (actual !== expected) {
-    console.log(`🛑🛑🛑 ASSERTION FAILED! ${actual} !== ${expected}🛑🛑🛑`);
-  }
-};
+const assertEqual = require("./assertEqual")
 //first we check the length of both arrays with arr.length then we check each individual value with the for loop which iterates throughout all of the elements
 const eqArrays = function(arr1, arr2) {
   if(arr1.length !== arr2.length) {
@@ -17,7 +11,7 @@ const eqArrays = function(arr1, arr2) {
   }
   return true
 }
-
+module.exports = eqArrays;
 
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true) // => true
